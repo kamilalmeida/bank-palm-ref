@@ -36,6 +36,7 @@ async function criarConta() {
 
 function load() {
   if (window.location.pathname == "/transacoes.html") {
+   
     getContentPorId();
   }
 }
@@ -43,8 +44,6 @@ function load() {
 window.onload = load;
 
 //PEGAR USUÁRIO POR ID
-
-
 
 async function fazerDeposito() {
   let elementCurrentBalance = document.getElementById("transacao-valor");
@@ -75,7 +74,6 @@ async function fazerDeposito() {
   gerarHTML(dados);
   handleChange(dados);
   document.getElementById("transacao-valor").value = "";
-
 }
 
 async function fazerSaque() {
