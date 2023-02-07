@@ -1,6 +1,7 @@
 # Bank Palm refatorado com React
 
-Projeto desenvolvido em React para aprimorar meus conhecimentos. Para fins de conhecimento, construi uma API REST a qual simula transações bancárias como, extrato, saque e depósito. Criei essa interface para consumir minha API, onde conta com a página principal, cadastro, login e transações.
+Ano passado construi esse projeto em Javascritp Vanilla hoje desenvolvido em React para aprimorar meus conhecimentos. 
+Construi uma API REST a qual simula transações bancárias como, extrato, saque e depósito. Criei essa interface para consumir minha API, onde conta com a página principal, cadastro, login e transações.
 
 ![image](https://user-images.githubusercontent.com/87664619/217133029-ab232d06-59fc-4505-a790-960abfc0af54.png)
 
