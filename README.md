@@ -31,7 +31,6 @@ Styled-components
 Context API
 
 
-
 📊 Status do projeto
 Em andamento
 
