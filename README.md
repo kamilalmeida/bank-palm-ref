@@ -19,12 +19,12 @@ Construi uma API REST a qual simula transações bancárias como, extrato, saque
 
 
 
-💻 Features do projeto
+## 💻 Features do projeto
 -Validação de formulários,
 -Validação de dados da API,
 -Responsividade
 
-✔️ Técnicas e tecnologias utilizadas
+## ✔️ Técnicas e tecnologias utilizadas
 
 -React Hooks,
 -React Router,
