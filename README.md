@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Bank Palm refatorado com React
+
+![image](https://user-images.githubusercontent.com/87664619/217133029-ab232d06-59fc-4505-a790-960abfc0af54.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
