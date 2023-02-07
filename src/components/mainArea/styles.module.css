@@ -1,0 +1,205 @@
+h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 4.8rem;
+  line-height: 120%;
+}
+a {
+  color: #fff;
+}
+
+@media screen and (max-width: 688px) {
+  h1 {
+    font-family: "Sora", sans-serif;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  h2 {
+    font-family: "Sora", sans-serif;
+    /* font-size: 3.2rem; */
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  h5 {
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+button {
+  border: 0;
+}
+button:focus {
+  border: 0;
+}
+
+@media screen and (max-width: 1216px) {
+  .sfeatured {
+    height: 100%;
+  }
+}
+.sfeatured .container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sfeatured .container .featuredContentCta {
+  height: 70vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1216px) {
+  .sfeatured .container .featuredContentCta {
+    width: 100%;
+  }
+}
+.sfeatured .container .featuredContentCta h1 {
+  color: #b1459b;
+  line-height: 130%;
+}
+.titleActived {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 24px 0px 96px 0px;
+}
+
+.title {
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 24px 0px 96px 0px;
+}
+.featuredGroupCta button {
+  color: #fff;
+}
+
+.sfeatured .container .featuredContentCta .featuredGroupCta {
+  display: flex;
+  align-items: flex-end;
+  gap: 48px;
+}
+@media screen and (max-width: 540px) {
+  .sfeatured .container .featuredContentCta .featuredGroupCta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button {
+  background: linear-gradient(220.94deg, #b1459b 14.43%, #cb162e 85.28%);
+  height: 60px;
+  width: auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button img {
+  transition: width 0.4s ease;
+  margin-left: 16px;
+  width: 24px;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button:hover img {
+  width: 32px;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button div {
+  width: 60px;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta button {
+  font-weight: 500;
+  color: #edeaef;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 540px) {
+  .sfeatured .container .featuredContentCta .featuredGroupCta button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta > div {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (max-width: 540px) {
+  .sfeatured .container .featuredContentCta .featuredGroupCta > div {
+    margin-left: 0px;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta > div div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sfeatured .container .featuredContentCta .featuredGroupCta > div div > img {
+  width: 32px;
+  transition: 0.4s all ease;
+}
+.sfeatured
+  .container
+  .featuredContentCta
+  .featuredGroupCta
+  > div
+  div
+  > img:hover {
+  width: 40px;
+  cursor: pointer;
+}
+.sfeatured .container .featuredCards {
+  height: 50vh;
+  width: 45vw;
+
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 1216px) {
+  .sfeatured .container .featuredCards {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .container {
+    padding: 72px 32px;
+  }
+}
+
+.featuredCards {
+  animation: front-move 3s ease 1s infinite alternate;
+}
+
+@keyframes front-move {
+  0% {
+    transform: translate3d(0, -70px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}

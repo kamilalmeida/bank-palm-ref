@@ -1,0 +1,31 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+.wrapper p {
+  color: #f31;
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+.input {
+  color: rgb(17, 17, 17);
+  padding: 8px 10px;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 0px 0px 1px;
+  border-bottom-color: rgba(17, 17, 17, 0.2);
+
+  min-height: 16px;
+  height: 52px;
+}
+
+.label {
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,152 @@
+div.blockcentral {
+  height: 100vh;
+  background-color: #b1459bd8;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding-bottom: 30px;
+  background-color: white;
+  width: 440px;
+  height: 380px;
+  box-shadow: 4px 4px 7px #ffffff3d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputfield ::placeholder {
+  margin-bottom: 0.2em;
+  color: #a79e9e;
+
+  font-size: 1.5rem;
+  display: block;
+}
+
+.inputfield input {
+  outline: none;
+
+  width: 350px;
+  height: 52px;
+
+  margin-bottom: 1rem;
+
+  font-size: 1.7rem;
+
+  background-color: #fff9fb;
+
+  border: 0;
+  border-bottom: #c02ace73 solid 2px;
+  border-radius: 3px 3px 0px 0px;
+
+  color: #626262;
+
+  padding: 1rem;
+}
+
+.img_logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.img_logo h1 {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-shadow: #0000007e 4px 4px 4px;
+  font-size: 3rem;
+}
+
+input:focus {
+  border: solid 1px #cfcfcf;
+  border-bottom: #c02ace solid 2px;
+}
+
+.container h2 {
+  color: #6262628c;
+  font-size: 2rem;
+}
+.botao {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background-color: #fff;
+  /* background-image: linear-gradient(to top, #e3141ece, #9719a3e3); */
+  border: 2px solid #c02acecc;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 52px;
+}
+
+.botao a {
+  text-decoration: none;
+  color: #c02acecc;
+  font-weight: bold;
+
+  padding: 15px 149px;
+}
+
+.botao:hover {
+  background-color: #c02acecc;
+}
+
+.botao a:hover {
+  color: #fff;
+}
+
+.res {
+  background-color: rgba(245, 7, 7, 0.192);
+  color: rgb(252, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  width: 350px;
+
+  padding: 10px;
+
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .container {
+    width: 270px;
+  }
+
+  .inputfield input {
+    width: 235px;
+  }
+
+  .botao {
+    width: 253px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 370px;
+  }
+
+  .inputfield input {
+    width: 300px;
+  }
+
+  .botao {
+    width: 300px;
+  }
+}

@@ -1,0 +1,136 @@
+header {
+  width: 100%;
+  transition: 0.8s ease;
+  position: absolute;
+  z-index: 999;
+}
+.navbar {
+  background-color: #b1459bd8;
+  border-radius: 3px;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overflow-body {
+  overflow-y: hidden;
+}
+.mobileNavbar {
+  display: none;
+}
+.mobileNavbar div img {
+  width: 32px;
+}
+
+@media screen and (max-width: 688px) {
+  .mobileNavbar {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+}
+.navbarItem1 {
+  display: flex;
+  align-items: center;
+}
+.navbarItem1 .logo {
+  width: 40px;
+  height: 40px;
+}
+.navbarItem1 > ul {
+  display: flex;
+  align-items: center;
+}
+.navbarItem1 > ul > li {
+  position: relative;
+  margin-left: 48px;
+  padding: 8px 0px;
+  width: 180px;
+}
+.navbarItem1 > ul > li:hover ul {
+  display: inline-block;
+}
+.navbarItem1 > ul > li ul {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(229, 29, 55, 0.1);
+}
+.navbarItem1 > ul > li ul li {
+  display: flex;
+  margin: 16px 0px;
+}
+.navbarItem1 > ul > li ul a {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 8px 24px;
+}
+.navbarItem1 > ul > li ul a:hover {
+  color: #b1459b;
+}
+
+.navbarItem1 > ul > li > a:hover {
+  color: #b1459b;
+}
+.navbarItem1 > ul > li > a::after {
+  content: "";
+  position: absolute;
+  top: 24%;
+  right: -3px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  transition: 0.2s linear;
+  border-radius: 1px;
+  border-bottom: 2px solid #b1459b;
+  border-right: 2px solid #b1459b;
+}
+.navbarItem1 > ul > li > a:hover::after {
+  top: 32%;
+}
+.navbarItem2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #f2f4fd;
+  padding: 9px 32px;
+  border-radius: 6px;
+  transition: border-radius 0.4s ease;
+}
+.navbarItem2 img {
+  transition: width 0.4s ease;
+  width: 20px;
+}
+.navbarItem2 div {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarItem2:hover {
+  border-radius: 16px;
+}
+.navbarItem2:hover img {
+  width: 24px;
+}
+.navbarItem2 h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #b1459b;
+}
+@media screen and (max-width: 1216px) {
+  .navbarItem2 h4 {
+    color: #333;
+  }
+}
