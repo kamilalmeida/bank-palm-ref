@@ -3,6 +3,7 @@
 Ano passado construi esse projeto em Javascritp Vanilla hoje desenvolvido em React para aprimorar meus conhecimentos. 
 Construi uma API REST a qual simula transações bancárias como, extrato, saque e depósito. Criei essa interface para consumir minha API, onde conta com a página principal, cadastro, login e transações.
 
+
 ![image](https://user-images.githubusercontent.com/87664619/217133029-ab232d06-59fc-4505-a790-960abfc0af54.png)
 
 ![image](https://user-images.githubusercontent.com/87664619/217133122-1f6f6fbb-4e58-4799-9781-82f13d9c2e18.png)
@@ -19,26 +20,25 @@ Construi uma API REST a qual simula transações bancárias como, extrato, saque
 
 
 💻 Features do projeto
-Validação de formulários,
-Validação de dados da API,
-Responsividade
+-Validação de formulários,
+-Validação de dados da API,
+-Responsividade
 
 ✔️ Técnicas e tecnologias utilizadas
 
-React Hooks,
-React Router,
-Styled-components
-Context API
+-React Hooks,
+-React Router,
+-Styled-components
+-Context API
 
 
-📊 Status do projeto
-Em andamento
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 
-## Para rodar o projeto na sua máquina:
+## Abrir e rodar o projeto:
+- Após baixar o projeto, você pode abrir em uma IDE de sua preferência.
 
 - Instalar as dependências:
-
 ### `npm install`
 
 - Para abrir o projeto no navegador:
