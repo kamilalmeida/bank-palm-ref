@@ -12,6 +12,8 @@ import useForm from "../../Hooks/useForm";
 export default function CreateAccount() {
   const { userLogin } = React.useContext(UserContext);
   const username = useForm();
+  const usercpf = useForm();
+  console.log(username);
 
   async function handleSubmit() {
     if (username.value !== null) userLogin(username);
@@ -60,7 +62,7 @@ export default function CreateAccount() {
           Complete os campos ao lado para pedir sua Conta e Cartão de crédito
         </h1>
         <form action="">
-          <Input label="CPF" name="cpf" type="number" />
+          <Input label="CPF" name="cpf" type="number"  {...usercpf}/>
           <Input
             label="Nome completo"
             type="text"

@@ -1,30 +1,34 @@
 import React from "react";
 import styles from "./styles.module.css";
+import { ReactComponent as User } from "../assets/usuario.svg";
+
 
 function Extract() {
   const dataString = window.localStorage.getItem("data");
   const dataObj = JSON.parse(dataString);
-  const random = Math.floor(Math.random() * 60);
+
+ 
+  
 
   if (dataObj !== null)
-  
     return (
       <>
         <section className={styles.dados}>
           <div className={styles.layout_2}>
             <div className={styles.informacoes}>
               <div className={styles.itemPhoto}>
-                <img src={`https://i.pravatar.cc/150?img=${random}`} alt="" />
+                <User />
+                
               </div>
 
               <h2 className={styles.nome_user}>{`Olá, ${dataObj.name}`}</h2>
-
               <div className={styles.saldo}>
                 <p>Saldo:</p>
                 <strong className={styles.saldo_atual}>
                   R${dataObj.currentBalance}
                 </strong>
               </div>
+              <div></div>
             </div>
           </div>
           <div className={styles.transaction_all}>
