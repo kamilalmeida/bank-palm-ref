@@ -21,6 +21,7 @@ export default function useForm() {
     setValue,
     onChange,
     error,
+    validate: () => validate(value),
     onBlur: () => validate(value),
   };
 }

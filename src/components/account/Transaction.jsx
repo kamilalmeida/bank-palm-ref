@@ -11,7 +11,28 @@ export default function Transaction() {
   const [valueDeposit, setValueDeposit] = React.useState("");
   const [activeButton, setActiveButton] = React.useState(false);
   const { data } = React.useContext(UserContext);
-  console.log(activeButton);
+
+  async function withdraw() {
+    let objAccount = {
+      amount: Number(valueInput.value),
+      type: "saque",
+    };
+
+    const init = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objAccount),
+    };
+    const response = await fetch(
+      `https://api-accounts.fly.dev/accounts/${data && data.id}/saque`,
+      init
+    );
+    const json = await response.json();
+    window.localStorage.setItem("data", JSON.stringify(json));
+    setValueDeposit(json);
+  }
 
   async function deposit() {
     let objAccount = {
@@ -37,10 +58,10 @@ export default function Transaction() {
 
   return (
     <>
-      <section className={styles.principal}>
+      <section className={styles.main}>
         <div className={styles.img_logo}>
           <img src={logo} alt="logo BankPalm" />
-          <h1 className={styles.gradient}>ank palm</h1>
+          <h1 className={styles.title}>ank palm</h1>
         </div>
         <div className={styles.form_geral}>
           <div className={styles.campo_transaction}>
@@ -54,26 +75,24 @@ export default function Transaction() {
           </div>
           <div>
             <button
-              className={` ${styles.botao} ${
-                activeButton == true ? styles.displaynone : ""
+              className={` ${styles.buttontransactions} ${
+                activeButton === true ? styles.displaynone : ""
               }`}
               onClick={deposit}
             >
               Realizar depósito
             </button>
             <button
-              className={` ${styles.botao} ${
-                activeButton == false ? styles.displaynone : ""
+              className={` ${styles.buttontransactions} ${
+                activeButton === false ? styles.displaynone : ""
               }`}
-              onClick={deposit}
+              onClick={withdraw}
             >
               Realizar saque
             </button>
           </div>
-          <div className="res"></div>
-          <div className="resp"></div>
         </div>
-        <div className={styles.botoes}>
+        <div className={styles.button}>
           <div
             className={` ${!activeButton ? styles.button_actived : ""} `}
             onClick={() => setActiveButton(!activeButton)}

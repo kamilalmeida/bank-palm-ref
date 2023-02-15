@@ -13,7 +13,7 @@ import Login from "./components/login/Login";
 
 function App() {
   const [theme, setTheme] = React.useState(light);
-  
+
   function toggleTheme() {
     setTheme(theme.title === "light" ? dark : light);
   }

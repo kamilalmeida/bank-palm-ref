@@ -3,18 +3,13 @@ import styles from "./styles.module.css";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import Input from "../input/Input";
-
 import useForm from "../../Hooks/useForm";
 
 export default function Login() {
   const usercpf = useForm();
   const userpassword = useForm();
 
-  const nameLocalStorage = window.localStorage.getItem("data");
-  const nameLocalStorageObj = JSON.parse(nameLocalStorage);
-  console.log(nameLocalStorageObj);
 
-  if (usercpf)
     return (
       <>
         <div className={styles.blockcentral}>
@@ -24,7 +19,6 @@ export default function Login() {
           </div>
           <div className={styles.container}>
             <h2>Faça seu login</h2>
-
             <form action="">
               <div className={styles.inputfield}>
                 <Input
@@ -57,4 +51,5 @@ export default function Login() {
         </div>
       </>
     );
+
 }

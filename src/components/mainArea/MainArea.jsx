@@ -2,7 +2,7 @@ import React from "react";
 import arrow from "../assets/arrow-right.svg";
 import apple from "../assets/apple.svg";
 import playstore from "../assets/playstore.svg";
-import card from "../assets/card-shadow.svg";
+import hand from "../assets/hand.png";
 import styles from "./styles.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -63,9 +63,9 @@ export default function MainArea({ theme }) {
               </div>
             </div>
 
-            <div className={styles.featuredCards}>
+            <div >
               <img
-                src={card}
+                src={hand}
                 alt="cartão BankPalm frente"
                 width="400px"
                 height="400px"
