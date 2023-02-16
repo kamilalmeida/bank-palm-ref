@@ -240,7 +240,7 @@ div.border {
   display: none;
 }
 
-@media (min-width: 315px) and (max-width: 40rem) {
+@media (max-width: 40rem) {
   .form_geral {
     padding-left: 20px;
     padding-right: 20px;
@@ -273,7 +273,7 @@ div.border {
 
   .main {
     width: 100vw;
-    height: 62vh;
+    height: 59vh;
   }
   .button {
     width: 100%;
