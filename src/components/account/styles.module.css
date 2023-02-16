@@ -240,7 +240,7 @@ div.border {
   display: none;
 }
 
-@media (max-width: 40rem) {
+@media (min-width: 300px) and (max-width: 40rem) {
   body {
     overflow-x: hidden;
     overflow-y: auto;
@@ -277,6 +277,7 @@ div.border {
   }
 
   .main {
+  
     width: 100vw;
     height: 69vh;
   }
