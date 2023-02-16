@@ -13,19 +13,15 @@ export default function Header({ toggleTheme, theme }) {
 
   return (
     <>
-      <nav className={`${styles.navbar}`}>
+      <nav className={ styles.navbar}>
         <C.Container className={styles.navbarItem1}>
           <div className={styles.logo}>
             <a href="" rel="noopener">
               <img src={logo} alt="Logo BankPalm" width="40px" height="40px" />
             </a>
           </div>
-          <div>
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <ul>
+        
+          <ul >
             <li>
               <a href="" rel="noopener">
                 BankPalm
@@ -74,12 +70,7 @@ export default function Header({ toggleTheme, theme }) {
           <img src={User} alt="ícone login user" />
         </NavLink>
         <ThemeSwitche toggleTheme={toggleTheme} />
-        <button
-          className={`${mobile && styles.mobileButtonActive} ${
-            styles.mobileButton
-          }`}
-          onClick={() => setMobile(!mobile)}
-        ></button>
+       
       </nav>
       <MainArea theme={theme} />
     </>

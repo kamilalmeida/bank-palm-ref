@@ -16,26 +16,24 @@ a {
     font-size: 4rem;
   }
 }
-
-@media screen and (max-width: 688px) {
-  h2 {
-    font-family: "Sora", sans-serif;
-    /* font-size: 3.2rem; */
-    line-height: 120%;
-  }
+.openAccount {
+  padding: 18px 55px;
 }
-
 @media screen and (max-width: 688px) {
-  h3 {
-    font-family: "Sora", sans-serif;
-    font-size: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 688px) {
-  h5 {
-    font-family: "Sora", sans-serif;
-    font-size: 1.8rem;
+  @media screen and (max-width: 688px) {
+    h5 {
+      font-family: "Sora", sans-serif;
+      font-size: 1.8rem;
+    }
+    h3 {
+      font-family: "Sora", sans-serif;
+      font-size: 2.4rem;
+    }
+    h2 {
+      font-family: "Sora", sans-serif;
+      /* font-size: 3.2rem; */
+      line-height: 120%;
+    }
   }
 }
 
@@ -102,6 +100,7 @@ button:focus {
   gap: 48px;
 }
 @media screen and (max-width: 540px) {
+
   .sfeatured .container .featuredContentCta .featuredGroupCta {
     flex-direction: column;
     align-items: flex-start;
@@ -111,7 +110,7 @@ button:focus {
   background: linear-gradient(220.94deg, #b1459b 14.43%, #cb162e 85.28%);
   height: 60px;
   width: auto;
-  padding: 16px 32px;
+  padding: 30px;
   border-radius: 4px;
   display: flex;
   align-items: center;

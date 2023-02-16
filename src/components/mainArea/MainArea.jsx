@@ -28,7 +28,7 @@ export default function MainArea({ theme }) {
                 </h3>
 
                 <div className={styles.featuredGroupCta}>
-                  <button>
+                  <button className={styles.openAccount}>
                     <NavLink to="createaccount">Abrir uma conta</NavLink>
                     <div>
                       <img

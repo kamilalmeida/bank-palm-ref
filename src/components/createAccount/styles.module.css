@@ -13,7 +13,7 @@
   max-width: 468px;
   margin-bottom: 70px;
 }
-button.btn_create > a{
+button.btn_create > a {
   width: 330px;
   display: block;
 }
@@ -141,7 +141,15 @@ button.btn_create > a{
     margin-bottom: 40px;
   }
 
-  
+  @media (max-width: 50rem) {
+    .subtitle {
+      font-size: 2.4rem;
+    }
+    .screen2{
+      padding: 66px 40px 0px 30px;
+
+    }
+  }
 }
 .about_image_mobile .about_image_float {
   width: 73px;
