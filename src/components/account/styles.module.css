@@ -241,6 +241,11 @@ div.border {
 }
 
 @media (max-width: 40rem) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .form_geral {
     padding-left: 20px;
     padding-right: 20px;
@@ -274,13 +279,10 @@ div.border {
   .main {
     width: 100vw;
     height: 69vh;
-    
   }
   .button {
     width: 100%;
   }
-
-
 }
 
 .theme {
