@@ -5,8 +5,9 @@ import User from "../assets/user.svg";
 import ThemeSwitche from "../ThemeSwitch";
 import * as C from "./styles";
 import { NavLink } from "react-router-dom";
+import MainArea from "../mainArea/MainArea";
 
-export default function Header({ toggleTheme }) {
+export default function Header({ toggleTheme, theme }) {
   return (
     <>
       <nav className={styles.navbar}>
@@ -66,6 +67,7 @@ export default function Header({ toggleTheme }) {
         </NavLink>
         <ThemeSwitche toggleTheme={toggleTheme} />
       </nav>
+      <MainArea theme={theme} />
     </>
   );
 }

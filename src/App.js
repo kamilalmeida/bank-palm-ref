@@ -23,12 +23,11 @@ function App() {
         <BrowserRouter>
           <GlobalStyle />
           <Routes>
-            <Header toggleTheme={toggleTheme} />
+            <Header toggleTheme={toggleTheme} theme={theme} />
             <Route path="createaccount" element={<CreateAccount />} />
             <Route path="login" element={<Login />} />
             <Route path="login/conta" element={<Account />} />
           </Routes>
-          <MainArea theme={theme} />
         </BrowserRouter>
       </UserStorage>
     </ThemeProvider>

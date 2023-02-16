@@ -1,5 +1,9 @@
+
+
+
 div.blockcentral {
   height: 100vh;
+  overflow-y: hidden;
   background-color: #b1459bd8;
 
   background-attachment: fixed;
