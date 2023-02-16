@@ -128,7 +128,7 @@ h1 {
   width: 76rem;
   overflow: hidden;
   overflow-y: scroll;
-  height: 47vh;
+  height: 50vh;
   margin-top: 20px;
 }
 
@@ -240,7 +240,25 @@ div.border {
   display: none;
 }
 
-@media (max-width: 65rem) {
+@media (min-width: 315px) and (max-width: 40rem) {
+  .form_geral {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .transaction_all {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .scroll_transactions {
+    margin-left: 2.2rem;
+  }
+
+  .last_transactions p {
+    margin-right: 70px;
+  }
+  .layout_2 {
+    padding: 3rem 3rem;
+  }
   .transaction_all strong {
     background-color: none;
     backdrop-filter: none;
@@ -255,10 +273,14 @@ div.border {
 
   .main {
     width: 100vw;
-    height: 48vh;
+    height: 62vh;
   }
   .button {
     width: 100%;
+  }
+
+  .buttontransactions {
+    margin-bottom: 14rem;
   }
 }
 
