@@ -274,6 +274,7 @@ div.border {
   .main {
     width: 100vw;
     height: 59vh;
+    background-color: #07ea7d;
   }
   .button {
     width: 100%;
