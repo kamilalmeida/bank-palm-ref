@@ -43,7 +43,6 @@ button:focus {
 }
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
   background-color: ${(props) => props.theme.colors.background};
   
   
