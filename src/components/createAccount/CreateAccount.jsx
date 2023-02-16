@@ -84,7 +84,7 @@ export default function CreateAccount() {
               maxLength="8"
             />
 
-            <button className="btn_create" onClick={handleSubmit}>
+            <button className={styles.btn_create} onClick={handleSubmit}>
               Enviar
             </button>
           </form>

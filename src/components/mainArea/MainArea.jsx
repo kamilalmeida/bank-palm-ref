@@ -63,7 +63,7 @@ export default function MainArea({ theme }) {
               </div>
             </div>
 
-            <div >
+            <div className={styles.hand} >
               <img
                 src={hand}
                 alt="cartão BankPalm frente"

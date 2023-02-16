@@ -85,7 +85,7 @@ button.btn_create > a{
   color: rgba(17, 17, 17, 0.7);
 }
 
-button {
+.btn_create {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   border-radius: 6.25rem;
@@ -102,7 +102,7 @@ button {
   align-items: center;
 }
 
-button:hover {
+.btn_create:hover {
   opacity: 0.8;
 }
 
@@ -141,9 +141,7 @@ button:hover {
     margin-bottom: 40px;
   }
 
-  button {
-    margin-top: 3rem;
-  }
+  
 }
 .about_image_mobile .about_image_float {
   width: 73px;

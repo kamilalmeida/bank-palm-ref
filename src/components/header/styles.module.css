@@ -25,16 +25,6 @@ header {
   width: 32px;
 }
 
-@media screen and (max-width: 688px) {
-  .mobileNavbar {
-    display: inline-block;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
-  }
-}
 .navbarItem1 {
   display: flex;
   align-items: center;
@@ -129,8 +119,81 @@ header {
   font-weight: 500;
   color: #b1459b;
 }
-@media screen and (max-width: 1216px) {
-  .navbarItem2 h4 {
-    color: #333;
+
+.mobileButton {
+  background: transparent;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  transition: 0.1s;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+}
+
+@media screen and (max-width: 50rem) {
+  .navbar li {
+    display: none;
+  }
+  .mobileNavbar {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+
+  .mobileButton::after {
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 2.5px;
+    border-radius: 3px;
+    background: #fff;
+
+    box-shadow: 0 6px #fff, 0 -6px #fff;
+    transition: 0.2s;
+  }
+  .mobileButtonActive:after {
+    transform: rotate(90deg);
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 8px #fff, 0 -8px #fff;
+  }
+  .navmobile {
+    display: flex;
+  }
+
+  .navMobileActive {
+    transition: 0.3s;
+    opacity: 1;
+    z-index: 100;
+    pointer-events: inital;
+  }
+
+  .navmobile a,
+  .navmobile button {
+    display: flex;
+    align-items: center;
+    background: none;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    border: none;
+  }
+
+  .navbarItem2 img,
+  h4 {
+    display: none;
+  }
+
+  .navbarItem2 {
+    display: none;
   }
 }

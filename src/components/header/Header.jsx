@@ -4,18 +4,26 @@ import styles from "./styles.module.css";
 import User from "../assets/user.svg";
 import ThemeSwitche from "../ThemeSwitch";
 import * as C from "./styles";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import MainArea from "../mainArea/MainArea";
 
 export default function Header({ toggleTheme, theme }) {
+  const [mobile, setMobile] = React.useState(false);
+  console.log(mobile);
+
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav className={`${styles.navbar}`}>
         <C.Container className={styles.navbarItem1}>
           <div className={styles.logo}>
             <a href="" rel="noopener">
               <img src={logo} alt="Logo BankPalm" width="40px" height="40px" />
             </a>
+          </div>
+          <div>
+            <ul>
+              <li></li>
+            </ul>
           </div>
           <ul>
             <li>
@@ -59,13 +67,19 @@ export default function Header({ toggleTheme, theme }) {
             </li>
           </ul>
         </C.Container>
+
         <NavLink to="/login" className={styles.navbarItem2} rel="noopener">
           <h4>Login</h4>
-          <div>
-            <img src={User} alt="ícone login user" />
-          </div>
+
+          <img src={User} alt="ícone login user" />
         </NavLink>
         <ThemeSwitche toggleTheme={toggleTheme} />
+        <button
+          className={`${mobile && styles.mobileButtonActive} ${
+            styles.mobileButton
+          }`}
+          onClick={() => setMobile(!mobile)}
+        ></button>
       </nav>
       <MainArea theme={theme} />
     </>
