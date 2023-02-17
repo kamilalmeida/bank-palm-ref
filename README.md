@@ -3,9 +3,7 @@
 Ano passado construi esse projeto em Javascritp Vanilla hoje desenvolvido em React para aprimorar meus conhecimentos. 
 Construi uma API REST a qual simula transações bancárias como, extrato, saque e depósito. Criei essa interface para consumir minha API, onde conta com a página principal, cadastro, login e transações.
 
-<p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
-</p>
+Veja o projeto em produção: https://bank-palm-ref.vercel.app/
 
 
 ![image](https://user-images.githubusercontent.com/87664619/217133029-ab232d06-59fc-4505-a790-960abfc0af54.png)
